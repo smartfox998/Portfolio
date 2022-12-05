@@ -1,0 +1,66 @@
+/* set border-box (so that css uses a more reasonable box model, and so it’s like every other platform) */
+*, *::before, *::after { 
+    box-sizing: border-box;
+}
+
+/* get rid of default margins which vary depending on browser anyway, just set it yourself later*/
+* {
+    margin: 0;
+}
+
+/* media elements are replaced elements which have a width based on the media, so we prevent it from expanding beyond its container, and take up a row */
+img, picture, video, canvas, svg { 
+    display: block;
+    max-width: 100%;
+}
+
+/* make tables look like spreadsheets and less like a spaced-out grid */
+table { 
+    border-collapse: collapse; border-spacing: 0;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+    min-width: 400px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* align-items: center; */
+    align-self: center;
+    margin-top: 100px;
+}
+
+.introduction-text-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    min-width: 600px;
+    min-height: 70px;
+    font-size: 35px;
+    font-weight: 700;
+    text-underline-position: under;
+}
+
+
