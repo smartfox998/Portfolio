@@ -29,8 +29,9 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px 50px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .about {
@@ -63,4 +64,21 @@ table {
     text-underline-position: under;
 }
 
+.work-section {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: 80px;
+    max-width: 65rem;
+}
+
+.work {
+    margin: 2rem;
+    max-width: 25rem;
+}
+
+.work-description {
+    font-size: 20px;
+}
 
