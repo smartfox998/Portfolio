@@ -19,6 +19,10 @@ table {
     border-collapse: collapse; border-spacing: 0;
 }
 
+a { 
+    text-decoration: none; 
+}
+
 .flex-container-row {
     display: flex;
     flex-direction: column;
